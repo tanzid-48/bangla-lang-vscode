@@ -1,65 +1,48 @@
-# bangla-lang README
+# বাংলা-ল্যাং VS Code Extension 🇧🇩
 
-This is the README for your extension "bangla-lang". After writing up a brief description, we recommend including the following sections.
+VS Code এ `.bangla` file এর syntax highlighting।
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Keywords color highlighting
+- String highlighting
+- Number highlighting
+- Comment highlighting
+- Built-in functions highlighting
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+### Method 1: VS Code থেকে সরাসরি
+1. `.vsix` file download করুন
+2. Terminal এ দিন:
+```bash
+code --install-extension bangla-lang-1.0.0.vsix
+```
+3. VS Code restart করুন
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Method 2: VS Code Extensions panel থেকে
+1. `Ctrl+Shift+P` চাপুন
+2. `Install from VSIX` লিখুন
+3. `.vsix` file select করুন
 
-## Requirements
+## Usage
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+`.bangla` extension দিয়ে file বানালে automatically syntax highlighting চালু হবে।
 
-## Extension Settings
+## Example
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+```bangla
+শুরু
+ধরো ক = 5;
+দেখাও "হ্যালো বাংলাদেশ!";
+যদি (ক > 3) {
+  দেখাও ক;
+}
+শেষ
+```
 
-For example:
+## Related
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- [বাংলা-ল্যাং](https://github.com/tanzid-48/bangla-lang)
+- [Playground](https://tanzid-48.github.io/bangla-lang)
+- [npm](https://www.npmjs.com/package/bangla-lang-by-tanzid)
