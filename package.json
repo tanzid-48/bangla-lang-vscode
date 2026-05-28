@@ -1,0 +1,32 @@
+{
+  "name": "bangla-lang",
+  "displayName": "বাংলা-ল্যাং",
+  "description": "Syntax highlighting for Bangla programming language",
+  "version": "1.0.0",
+  "publisher": "tanzid-dev48",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "bangla",
+        "aliases": ["Bangla Lang", "bangla"],
+        "extensions": [".bangla"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bangla",
+        "scopeName": "source.bangla",
+        "path": "./syntaxes/bangla.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanzid-48/bangla-lang-vscode"
+  }
+}

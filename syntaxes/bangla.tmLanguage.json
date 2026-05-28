@@ -1,0 +1,61 @@
+{
+  "name": "Bangla Lang",
+  "scopeName": "source.bangla",
+  "fileTypes": ["bangla"],
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#builtins" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#comments" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.bangla",
+          "match": "(শুরু|শেষ|যদি|নাহলে|যতক্ষণ|গণনা করো|থামো|এগিয়ে যাও|ফেরত দাও|নাহলে যদি)"
+        },
+        {
+          "name": "keyword.declaration.bangla",
+          "match": "(ধরো|কাজ|করো)"
+        },
+        {
+          "name": "keyword.other.bangla",
+          "match": "(দেখাও|সমস্যা|জিজ্ঞেস করো)"
+        },
+        {
+          "name": "constant.language.bangla",
+          "match": "(সত্য|মিথ্যা|শূন্য)"
+        }
+      ]
+    },
+    "builtins": {
+      "patterns": [
+        {
+          "name": "support.function.bangla",
+          "match": "(দৈর্ঘ্য|বর্গমূল|পূর্ণসংখ্যা|এলোমেলো|মোট|স্ট্রিং|সংখ্যা)"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.bangla",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.bangla",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric.bangla",
+      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+    },
+    "comments": {
+      "name": "comment.line.bangla",
+      "match": "//.*$"
+    }
+  }
+}
